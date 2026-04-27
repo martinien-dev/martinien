@@ -1,4 +1,5 @@
 import { useEffect, useMemo, useState } from 'react'
+import { Analytics } from '@vercel/analytics/react'
 import './App.css'
 import threadsIcon from './assets/thread.png'
 import profileImage from './assets/profile.jpg'
@@ -604,6 +605,7 @@ function App() {
           <p>© {new Date().getFullYear()} Iradukunda Nshimyeyo Martinien. All rights reserved.</p>
         </div>
       </footer>
+      <Analytics />
     </div>
   )
 }
